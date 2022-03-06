@@ -5,6 +5,7 @@ body {
 input {
   border-radius: 16px;
   border: none;
+  margin-right: 10px;
   padding: 6px 16px;
   outline: none;
 }
@@ -15,10 +16,18 @@ button {
   padding: 4px 16px;
 }
 
-button[diabled="false"]:hover {
+button:hover {
   background-color: #ff7fff;
   color: #fff;
   cursor: pointer;
+}
+
+button:disabled {
+  background-image: none;
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #ddd;
+  pointer-events: none;
 }
 
 .title {
